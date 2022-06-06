@@ -3,8 +3,8 @@ const ns = 'KakaoAuthDemo'
 export const AmplifyConfig = {
   Auth: {
     region: 'ap-northeast-2',
-    userPoolId: '',           // TODO: replace with actual userpoolid
-    userPoolWebClientId: '',  // TODO: replace with actual clientid
+    userPoolId: 'ap-northeast-2_3vqUf4M6J',           // TODO: replace with actual userpoolid
+    userPoolWebClientId: '3mni12kdjkufo56d5j3be05ohn',  // TODO: replace with actual clientid
   },
 }
 
@@ -13,6 +13,6 @@ export const ApiUrl = `https://${ApiHash}.execute-api.ap-northeast-2.amazonaws.c
 
 export const IdentityProvider = {
   Kakao: {
-    AppKey: `5cab2e032e90531d959a321a800373e5`, // TODO: replace with actual kakao client id
+    AppKey: `4205e8829366343b39451e3d60099dbe`, // TODO: replace with actual kakao client id 5cab2e032e90531d959a321a800373e5
   }
 }

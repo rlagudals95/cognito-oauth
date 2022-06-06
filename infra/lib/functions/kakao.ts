@@ -133,10 +133,14 @@ async function getOrCreateUser(email: string, UserAttributes: IUserAttr[]): Prom
 }
 
 async function getKakaoEmail(accessToken: string): Promise<string> {
+
+
   const resp = await axios.get('https://kapi.kakao.com/v2/user/me', {
     headers: {
       Authorization: `Bearer ${accessToken}`,
     },
   })
+
+  console.log('이메일 찍어보기 : ', resp);
   return resp.data.kakao_account.email
 }
